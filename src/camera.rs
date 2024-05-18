@@ -130,7 +130,7 @@ pub fn spawn_pixel_camera<P, S, C>(
                     target: RenderTarget::Image(image_handle.clone()),
                     ..default()
                 },
-                transform:Transform::default().looking_at(Vec3::ZERO, Vec3::Y),
+                transform: Transform::from_xyz(10.0, 10.0, 10.0).looking_at(Vec3::ZERO, Vec3::Y),
                 ..default()
             },
             P::default(),

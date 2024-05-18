@@ -8,6 +8,7 @@ fn main() {
     app.add_plugins((
         DefaultPlugins,
         bevy_xpbd_3d::prelude::PhysicsPlugins::default(),
+        bevy_inspector_egui::quick::WorldInspectorPlugin::default(),
     ))
     .add_plugins(camera::CameraPlugin)
     .insert_resource(AmbientLight {
@@ -18,7 +19,6 @@ fn main() {
     .add_systems(Startup, setup)
     .run();
 }
-
 
 fn setup(
     mut commands: Commands,
