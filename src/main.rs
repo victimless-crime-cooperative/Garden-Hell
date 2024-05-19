@@ -36,6 +36,12 @@ fn setup(
         Collider::cuboid(50.0, 0.5, 50.0),
     ));
 
+    commands.spawn(PbrBundle {
+        mesh: meshes.add(bevy::prelude::Sphere::new(5.0).mesh()),
+        material: materials.add(Color::WHITE),
+        ..default()
+    });
+
     commands.spawn(DirectionalLightBundle {
         directional_light: DirectionalLight {
             color: Color::ORANGE,

@@ -2016,6 +2016,7 @@ dependencies = [
  "bevy_asset_loader",
  "bevy_xpbd_3d",
  "leafwing-input-manager",
+ "victimless-camera",
 ]
 
 [[package]]
@@ -3966,6 +3967,15 @@ name = "version_check"
 version = "0.9.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "49874b5167b65d7193b8aba1567f5c7d93d001cafc34600cee003eda787e483f"
+
+[[package]]
+name = "victimless-camera"
+version = "0.1.0"
+source = "git+https://github.com/victimless-crime-cooperative/victimless-bevy.git#9a556bcb9e63d88cef326bb0a3281b0356aec5f8"
+dependencies = [
+ "bevy",
+ "bevy_xpbd_3d",
+]
 
 [[package]]
 name = "walkdir"
